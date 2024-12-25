@@ -103,6 +103,6 @@
     <Target Name="Package" DependsOnTargets="SetModuleVersion">
         <Message Importance="High" Text="[BLT PACKAGE] Creating deployment package $(PackageFullPath)..." />
         <Delete Files="$(PackageFullPath)" ContinueOnError="true"/>
-        <Exec Command="7zr a &quot;$(PackageFullPath)&quot; BannerlordTwitch BLTAdoptAHero BLTBuffet BLTConfigure" WorkingDirectory="$(OutputConfigRoot)"/>
+        <Exec Command="7z a &quot;$(PackageFullPath)&quot; BannerlordTwitch BLTAdoptAHero BLTBuffet BLTConfigure" WorkingDirectory="$(OutputConfigRoot)"/>
     </Target>
 </Project>
